@@ -19,7 +19,29 @@ npm install @derhuerst/micro-i18n
 ## Usage
 
 ```js
-todo
+const initI18n = require('@derhuerst/micro-i18n')
+
+const t = initI18n('en', {
+	en: {
+		'greeting': 'Hey %s!',
+		'messages.new': [
+			'Inbox zero. Congratulations!',
+			'You have one new message.',
+			'You have %d new messages.'
+		],
+		'upload': 'Uploading is %% done.'
+	},
+	de: {
+		'greeting': 'Hallo %s!',
+		'upload': 'Upload-Fortschritt: %d%'
+	}
+})
+
+t('de', 'greeting', 'Jannis') // Hallo Jannis!
+t('de', 'messages.new', 0) // Inbox zero. Contratulations!
+t('de', 'messages.new', 1) // You have one new message.
+t('de', 'messages.new', 50, 50) // You have 50 new messages.
+t('de', 'upload', 50) // Upload-Fortschritt: 50%
 ```
 
 
