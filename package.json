@@ -24,6 +24,7 @@
 		"node": ">=6"
 	},
 	"dependencies": {
+		"pff": "^1.0.0"
 	},
 	"devDependencies": {
 		"tap-min": "^1.2.2",
