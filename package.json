@@ -1,0 +1,36 @@
+{
+	"name": "@derhuerst/micro-i18n",
+	"description": "Yet another string internationalization tool.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"example.js"
+	],
+	"keywords": [
+		"i18n",
+		"internationalization",
+		"l10n",
+		"localization",
+		"string",
+		"plural"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/micro-i18n",
+	"repository": "derhuerst/micro-i18n",
+	"bugs": "https://github.com/derhuerst/micro-i18n/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"tap-min": "^1.2.2",
+		"tape": "^4.9.1"
+	},
+	"scripts": {
+		"test": "env NODE_ENV=dev node test.js | tap-min",
+		"prepublishOnly": "npm test"
+	}
+}
