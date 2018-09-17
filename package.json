@@ -26,12 +26,8 @@
 	"dependencies": {
 		"pff": "^1.0.0"
 	},
-	"devDependencies": {
-		"tap-min": "^1.2.2",
-		"tape": "^4.9.1"
-	},
 	"scripts": {
-		"test": "env NODE_ENV=dev node test.js | tap-min",
+		"test": "env NODE_ENV=dev node test.js",
 		"prepublishOnly": "npm test"
 	}
 }
